@@ -229,11 +229,11 @@ static void lcd_implementation_status_screen()
  u8g.setPrintPos(6,27);
  u8g.print(itostr3(int(degHotend(1) + 0.5)));
  lcd_printPGM(PSTR(LCD_STR_DEGREE " "));
- if (!isHeatingHotend(1)) u8g.drawBox(13,17,2,2);
+ if (!isHeatingHotend(1)) u8g.drawBox(14,17,2,2);
 	else
 		{
 		 u8g.setColorIndex(0);	// white on black
-		 u8g.drawBox(13,17,2,2);
+		 u8g.drawBox(14,17,2,2);
 		 u8g.setColorIndex(1);	// black on white
 		}
 
@@ -245,11 +245,11 @@ static void lcd_implementation_status_screen()
  u8g.setPrintPos(31,27);
  u8g.print(itostr3(int(degHotend(0) + 0.5)));
  lcd_printPGM(PSTR(LCD_STR_DEGREE " "));
- if (!isHeatingHotend(0)) u8g.drawBox(38,17,2,2);
+ if (!isHeatingHotend(0)) u8g.drawBox(39,17,2,2);
 	else
 		{
 		 u8g.setColorIndex(0);	// white on black
-		 u8g.drawBox(38,17,2,2);
+		 u8g.drawBox(39,17,2,2);
 		 u8g.setColorIndex(1);	// black on white
 		}
  //#else
