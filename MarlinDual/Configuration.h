@@ -403,7 +403,7 @@ const bool Z_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of
 // default settings
 
 #define DEFAULT_AXIS_STEPS_PER_UNIT   {100,100,800,102.3}  // MM3 - Default E99 -> E105
-#define DEFAULT_MAX_FEEDRATE          {250, 250, 10, 30}    // (mm/sec) Default: 500 500 15 30
+#define DEFAULT_MAX_FEEDRATE          {250, 250, 10, 5.25}    // (mm/sec) Default: 500 500 15 30
 #define DEFAULT_MAX_ACCELERATION      {1100,1100,100,10000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for skeinforge 40+, for older versions raise them a lot.
 
 #define DEFAULT_ACCELERATION          1100    // X, Y, Z and E max acceleration in mm/s^2 for printing moves
